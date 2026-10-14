@@ -60,7 +60,7 @@ function Index() {
       <span className="song-note"><Music2 aria-hidden="true"/>Pick your mood, Dear</span>
     </header>
     <main>
-      <section className="particle-opening page-width" aria-label="Animated mood garden opening"><ParticleDissolveCarousel items={moodSlides as ParticleDissolveItem[]} height="min(88svh, 900px)" particles={80000} autoplay={0} pattern="sweep" glow={0.8} dust={0.18} backdrop="#171329" /></section>
+      <section className="particle-opening page-width" aria-label="Animated mood garden opening"><ParticleDissolveCarousel items={moodSlides as ParticleDissolveItem[]} height="min(88svh, 900px)" particles={80000} autoplay={6500} pattern="sweep" glow={0.8} dust={0.18} backdrop="#171329" /></section>
       <section className="intro" aria-labelledby="gift-title">
         <HerbariumCanvas className="night-image" />
         <Orbit className="orbit-left"/><Orbit className="orbit-right"/>
