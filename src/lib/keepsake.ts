@@ -1,6 +1,6 @@
 export const milestones = [
   { id: 'hello', date: 'June 8', title: 'One little hello', subtitle: 'Where our stars first crossed', note: 'June 8-la Discord-la oru chinna hi-la start aachu namma. Appo idhu ivlo special aagum-nu enakkum theriyadhu, Dear. Ippo andha first hi nyabagam vandha kooda smile varudhu.' },
-  { id: 'us', date: 'June 16', title: 'Becoming us', subtitle: 'A little word. A lot of feeling.', note: 'June 16 dhaan namma love-ah solli, namma rendu perum 'us' aanom. Nee direct-ah ketta appo naan konjam late-ah dhaan sonnen… vekkam vera 😅 Aana en answer mattum unmaiyaana yes dhaan.' },
+  { id: 'us', date: 'June 16', title: 'Becoming us', subtitle: 'A little word. A lot of feeling.', note: "June 16 dhaan namma love-ah solli, namma rendu perum 'us' aanom. Nee direct-ah ketta appo naan konjam late-ah dhaan sonnen… vekkam vera 😅 Aana en answer mattum unmaiyaana yes dhaan." },
   { id: 'phone', date: 'Along the way', title: 'Still finding a way', subtitle: 'Even through the phone trouble', note: 'Un phone problem aana time-layum namma pesuradhukku vazhi kandupidichom. Vera phone, PC-nu epdiyo pesinom. Andha effort enakku romba meaningful, Dear. Time spend pannadhukku thanks.' },
 ] as const;
 
@@ -13,7 +13,7 @@ export const chapters = [
 
 export const scrapbook = [
   { icon: 'chat', label: 'Our everyday', title: 'My favourite part of an ordinary day.', note: 'Our daily conversations. Your little updates. The things that don’t need a big reason to be shared. Dear, talking to you makes the ordinary feel a little more special.', scribble: 'little talks, big feelings', number: '01' },
-  { icon: 'spark', label: 'Just you', title: 'A little random. Very, very you.', note: 'Nee random-ah edhaavadhu pesumbodhu, naan thaniya sirichittu iruppen. Sila neram 'aiyo indha ponnu' nu thonum 😂 Un cute side-ku reason thevai illa, Dear. Nee nee-ah irundha podhum.', scribble: 'my cute, random Dear', number: '02' },
+  { icon: 'spark', label: 'Just you', title: 'A little random. Very, very you.', note: "Nee random-ah edhaavadhu pesumbodhu, naan thaniya sirichittu iruppen. Sila neram 'aiyo indha ponnu' nu thonum 😂 Un cute side-ku reason thevai illa, Dear. Nee nee-ah irundha podhum.", scribble: 'my cute, random Dear', number: '02' },
   { icon: 'eye', label: 'That first glimpse', title: 'First your eyes. Then your whole smile.', note: 'First un kannu photo, appuram full photo… enakku nyabagam irukku, Dear. Chinna vishayam madhiri theriyalaam, aana andha moments enakku special.', scribble: 'a little more of you', number: '03' },
   { icon: 'phone', label: 'Across the distance', title: 'Two places. A conversation between them.', note: 'Namma rendu perum distance-la irukkom; adha naan marukka maaten. Aana un kooda neraya pesanum, voice-la kekkanum, video call-la sirikkaNum-nu aasai irukku. Unakku comfortable-a irukkura pace-la, Dear.', scribble: 'Trichy ↔ Malaysia', number: '04' },
   { icon: 'heart', label: 'Finding our way back', title: 'A small misunderstanding isn’t the whole story.', note: 'Namakulla chinna chinna sandai varum; naan sila neram overthink-um panniduven. Aana kovathula mudichidaama, pesi purinjikittu seri pannikkalaam-nu dhaan aasai. Un feelings-um enakku mukkiyam.', scribble: 'a little gentleness, always', number: '05' },
