@@ -28,6 +28,12 @@ function Heading({ number, label, children, description }: { number: string; lab
 function Divider() { return <div className="section-divider"><LittleStar/></div>; }
 const scrapIcons = [MessageCircle, Sparkles, Eye, Phone, Heart];
 const momentIcons = [Smile, Moon, Heart];
+const sillyReports = [
+  { label: "Dear: 5 mins", title: "5 mins-nu sonnaanga…", line: "Bubu clock check pannuchu. 47 minutes aachu. Dudu: “Avaloda 5 mins-ku namma Earth time set aagadhu da.”" },
+  { label: "Phone: 1%", title: "Battery 1% irukku!", line: "Bubu charger thedudhu. Dudu phone-a thookittu odudhu. Phone: “Neenga rendu perum sanda podunga… naan poitten.”" },
+  { label: "No mood", title: "Dear-ku mood illaam!", line: "Bubu snacks eduthuttu vandhuchu. Dudu blanket pottuchu. Rendu perum serious meeting: “Innaikku plan — onnum plan panna koodadhu.”" },
+  { label: "Tiny fight", title: "Chinna sanda started.", line: "Bubu: “Naan pesave maaten!” Dudu: “Sari.” … 8 seconds later: “Aana nee yen pesala?”" },
+];
 
 
 const moodSlides = [
@@ -44,6 +50,7 @@ function Index() {
   const [moment, setMoment] = useState<number | null>(null);
   const [lineCount, setLineCount] = useState(1);
   const [kept, setKept] = useState(false);
+  const [sillyReport, setSillyReport] = useState(0);
   const storyRef = useRef<HTMLElement>(null);
   const allRead = lineCount === closingLines.length;
   const selectedScrap = scrapbook[scrap];
@@ -75,11 +82,19 @@ function Index() {
         <p className="small-hand">seri, ulla vaa ✨</p>
         <div className="scroll-hint"><span>SCROLL PANNI PAARU · UNAKKU PUDICHADHA SELECT PANNU</span><ArrowDown aria-hidden="true"/></div>
       </section>
-      <section className="bubu-note page-width" aria-label="Bubu and Dudu silly corner">
+      <section className="bubu-note page-width" aria-label="Bubu and Dudu comedy corner">
         <div className="bubu-copy">
-          <p className="eyebrow">BUBU-DUDU TIME</p>
-          <h2>Inga konjam <em>comedy nadakkum.</em></h2>
-          <p>Bubu-Dudu rendu perum summa irukka maataanga. Avanga antics paaru; unakku pudicha GIF-a click pannalaam.</p>
+          <p className="eyebrow">BUBU-DUDU CASE FILES · 001</p>
+          <h2>Ivanga rendu perum <em>oru case-u.</em></h2>
+          <p>Oru situation select pannu. Bubu-Dudu enna loosuthanama pannuvaanga-nu paarpom. Serious-a eduthukka koodadhu. 😭</p>
+          <div className="silly-report-tabs" aria-label="Pick a silly situation">
+            {sillyReports.map((report, i) => <Button key={report.label} variant="outline" className="silly-report-button" aria-pressed={sillyReport === i} onClick={() => setSillyReport(i)}>{report.label}</Button>)}
+          </div>
+          <div className="silly-report-card" key={sillyReport} aria-live="polite">
+            <span className="silly-stamp">OFFICIAL NONSENSE REPORT</span>
+            <h3>{sillyReports[sillyReport].title}</h3>
+            <p>{sillyReports[sillyReport].line}</p>
+          </div>
         </div>
         <div className="bubu-stickers sticker-spread">
           <div className="bubu-sticker">
@@ -91,7 +106,7 @@ function Index() {
             <a className="sticker-source" href="https://tenor.com/view/dudu-bubu-dudu-bubu-couple-gif-2826150299264616580" target="_blank" rel="noreferrer">Chill mood · Tenor ↗</a>
           </div>
           <div className="bubu-sticker sticker-extra">
-            <img src="https://tenor.com/mn8H49dw2ek.gif" alt="Bubu and Dudu sharing a cute kiss" loading="lazy" decoding="async" />
+            <img src="https://tenor.com/mn8H49dw2ek.gif" alt="Bubu and Dudu sharing a cute moment" loading="lazy" decoding="async" />
             <a className="sticker-source" href="https://tenor.com/mn8H49dw2ek.gif" target="_blank" rel="noreferrer">Cute mood · Tenor ↗</a>
           </div>
         </div>
