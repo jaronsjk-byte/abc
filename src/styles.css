@@ -463,3 +463,114 @@ a:hover { text-underline-offset: 5px; }
 .site-footer{color:#f7f2e785;border-top:1px solid #f7f2e71f}.footer-love{color:#e5b76a}
 @media(max-width:760px){.particle-opening{margin-inline:16px;border-radius:8px 8px 42px 8px}.bubu-note{grid-template-columns:1fr;padding-inline:24px;gap:28px}.bubu-stickers{min-height:245px}#our-story.section,.moments-section{padding-inline:24px}.scrapbook-section .page-width{width:calc(100% - 40px)}.scrap-paper{min-height:330px}}
 @media(prefers-reduced-motion:reduce){.keepsake *,.keepsake *:before,.keepsake *:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+
+/* Palette refinement: midnight blue, warm ivory, muted rose and soft amber.
+   Replaces the previous green-heavy chapter colors while preserving layout and motion. */
+:root {
+  --background: #171b2b;
+  --foreground: #f8f1e7;
+  --card: #fbf5eb;
+  --card-foreground: #292d43;
+  --popover: #22283b;
+  --popover-foreground: #f8f1e7;
+  --primary: #d98d83;
+  --primary-foreground: #292d43;
+  --secondary: #2a3047;
+  --secondary-foreground: #f8f1e7;
+  --muted: #252b40;
+  --muted-foreground: #c3bdc2;
+  --accent: #34334c;
+  --accent-foreground: #f8f1e7;
+  --border: rgba(248, 241, 231, .18);
+  --ring: #e7b77b;
+  --gold: #e7b77b;
+  --paper-muted: #777184;
+  --paper-line: rgba(80, 69, 91, .24);
+  --shadow-paper: 0 18px 48px rgba(5, 8, 20, .2);
+}
+.keepsake {
+  background: radial-gradient(ellipse at 14% 8%, rgba(106, 119, 166, .2), transparent 34%),
+              radial-gradient(ellipse at 90% 65%, rgba(190, 112, 119, .1), transparent 32%),
+              #171b2b;
+  color: #f8f1e7;
+}
+.site-header { border-bottom-color: rgba(248, 241, 231, .16); }
+.intro { background: linear-gradient(180deg, #171b2b 0%, #24283d 58%, #343047 100%); }
+.intro::before {
+  background: linear-gradient(115deg, transparent 15%, rgba(231,183,123,.07) 42%, transparent 68%),
+              radial-gradient(ellipse at 50% 8%, rgba(217,141,131,.16), transparent 54%);
+}
+.intro h1 { color: #fbf5eb; }
+.intro h1 em { color: #e7b77b; }
+.intro .eyebrow, .small-hand { color: #d9a9a9; }
+.hero-copy { color: rgba(248,241,231,.78); }
+.open-letter-button { background: #d98d83 !important; color: #292d43 !important; }
+.open-letter-button:hover { background: #e7b77b !important; }
+.envelope-fold { background: #f0e4d5; }
+.wax-seal { background: #d98d83; color: #292d43; box-shadow: 0 2px 5px var(--paper-line), inset 0 0 0 5px rgba(217,141,131,.3); }
+.particle-opening { box-shadow: 0 35px 100px rgba(5,8,20,.42); }
+.particle-opening::after { border-color: rgba(248,241,231,.17); box-shadow: inset 0 0 90px rgba(10,7,24,.22); }
+
+/* Rose-clay sticker chapter */
+.bubu-note { color: #292d43; background: #ead2cb; }
+.bubu-copy .eyebrow { color: #925b62; }
+.bubu-copy h2 { color: #292d43; }
+.bubu-copy h2 em { color: #a85f68; }
+.bubu-copy > p:last-child { color: #62515b; }
+.bubu-note::before { background: radial-gradient(ellipse, rgba(168,95,104,.15), transparent 68%); }
+.bubu-sticker { border-color: rgba(255,255,255,.82); background: #fbf5eb; box-shadow: 12px 18px 0 rgba(41,45,67,.1); }
+.sticker-source { color: #62515b; background: #fbf5eb; }
+
+/* Dusty-blue story map */
+#our-story.section { color: #292d43; background: #dce3ef; }
+#our-story .section-heading h2 { color: #292d43; }
+#our-story .section-heading h2 em, #our-story .eyebrow { color: #536b96; }
+#our-story .section-description { color: #58657b; }
+#our-story .constellation .celestial-button { color: #292d43; }
+#our-story .constellation .celestial-button[aria-pressed=true] { background: rgba(251,245,235,.82); box-shadow: 0 12px 34px rgba(41,45,67,.1); }
+#our-story .star-node { background: #536b96; color: #fffaf3; }
+#our-story .celestial-button[aria-pressed=true] .star-node { border-color: #a85f68; color: #fffaf3; }
+#our-story .timeline-note { border-left-color: #a85f68; background: rgba(251,245,235,.82); color: #34384d; }
+#our-story .chapter-tabs .chapter-button[aria-pressed=true] { background: #536b96; border-color: #536b96; color: white; }
+#our-story .chapter-note { background: #fbf5eb; color: #34384d; box-shadow: 12px 12px 0 rgba(83,107,150,.12); }
+#our-story .chapter-note h3 { color: #a85f68; }
+
+/* Warm ivory scrapbook with rose accents */
+.scrapbook-section { background: #fbf5eb; color: #292d43; }
+.scrapbook-section .section-heading h2 { color: #292d43; }
+.scrapbook-section .section-heading h2 em, .scrapbook-section .eyebrow { color: #a85f68; }
+.scrapbook-section .section-description { color: #6f6874; }
+.scrapbook-tabs .scrap-tab { border-color: #e5d8d0; background: #fffdf8; color: #625d70; }
+.scrapbook-tabs .scrap-tab[aria-selected=true] { background: #a85f68; border-color: #a85f68; color: #fffaf3; }
+.scrap-paper { border-color: #e5d8d0; color: #292d43; background: repeating-linear-gradient(0deg,#fffdf8 0,#fffdf8 31px,#eee5df 32px); box-shadow: 12px 14px 0 #e5d8d0,20px 23px 55px rgba(41,45,67,.08); }
+.paper-topline { color: #8c6a69; border-bottom-color: #e8d7d0; }
+.paper-content h3 { color: #292d43; }
+.paper-content p { color: #625d70; }
+.paper-scribble { color: #a85f68; }
+.scrap-footer { color: #777184; }
+
+/* Powder-blue moment section */
+.moments-section { color: #292d43; background: #dce3ef; }
+.moments-section .section-heading h2 { color: #292d43; }
+.moments-section .section-heading h2 em, .moments-section .eyebrow { color: #536b96; }
+.moments-section .moment-button { border-color: rgba(41,45,67,.25); background: rgba(251,245,235,.8); color: #34384d; }
+.moments-section .moment-button[aria-pressed=true] { background: #536b96; color: #fffaf3; box-shadow: 0 12px 28px rgba(83,107,150,.2); }
+.moment-message { background: #fbf5eb; border-color: rgba(41,45,67,.12); color: #34384d; }
+.moment-message h3 { color: #a85f68; }
+
+/* Midnight closing chapter with soft amber highlights */
+.closing-section { color: #f8f1e7; }
+.closing-section .section-heading h2 { color: #f8f1e7; }
+.closing-section .section-heading h2 em, .closing-section .eyebrow { color: #e7b77b; }
+.closing-letter { border-color: rgba(231,183,123,.32); background: linear-gradient(130deg,rgba(231,183,123,.1),rgba(217,141,131,.06)); box-shadow: 0 28px 80px rgba(5,8,20,.35); }
+.letter-star, .letter-next, .footer-love { color: #e7b77b; }
+.letter-next { border-color: rgba(231,183,123,.4); }
+.promise-button { background: #e7b77b !important; color: #292d43 !important; }
+.promise-caption { color: rgba(248,241,231,.7); }
+.site-footer { color: rgba(248,241,231,.55); border-top-color: rgba(248,241,231,.14); }
+.site-footer::before { background: linear-gradient(90deg,transparent,#d98d83,transparent); }
+.footer-love svg { color: #d98d83; }
+@media (prefers-reduced-motion: reduce) {
+  .keepsake *, .keepsake *::before, .keepsake *::after { scroll-behavior: auto !important; }
+}
