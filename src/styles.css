@@ -602,3 +602,101 @@ a:hover { text-underline-offset: 5px; }
     animation: none !important;
   }
 }
+
+
+/* Readability + text motion refinement: keep section surfaces stable and animate
+   the text itself, with stronger contrast on every chapter. */
+.keepsake .section,
+.keepsake .bubu-note,
+.keepsake .scrapbook-section,
+.keepsake .moments-section,
+.keepsake .closing-section,
+.keepsake .site-footer {
+  animation: none;
+  filter: none;
+}
+.keepsake .section-heading,
+.keepsake .section-heading .eyebrow,
+.keepsake .section-heading h2,
+.keepsake .section-description,
+.keepsake .bubu-copy,
+.keepsake .constellation,
+.keepsake .timeline-note,
+.keepsake .chapter-tabs,
+.keepsake .chapter-note,
+.keepsake .scrapbook-layout,
+.keepsake .scrap-footer,
+.keepsake .moment-buttons,
+.keepsake .moment-message,
+.keepsake .closing-letter,
+.keepsake .promise-area {
+  animation: text-chapter-enter .72s cubic-bezier(.2,.75,.25,1) both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 32%;
+}
+@keyframes text-chapter-enter {
+  from { opacity: .15; transform: translateY(18px); filter: blur(2px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+/* Explicit high-contrast text colors; avoid muted text blending into its background. */
+.keepsake .section-description { color: #4c566d; }
+.keepsake #our-story .section-description,
+.keepsake #our-story .chapter-note p,
+.keepsake #our-story .timeline-note { color: #34384d; }
+.keepsake .scrapbook-section .section-description,
+.keepsake .scrapbook-section .paper-content p,
+.keepsake .scrapbook-section .scrap-footer { color: #514b5d; }
+.keepsake .moments-section .moment-message p { color: #34384d; }
+.keepsake .moment-empty { color: #514b5d; }
+.keepsake .bubu-copy > p:last-child { color: #493d47; }
+.keepsake .site-header .header-dedication,
+.keepsake .site-header .song-note { color: #d9d5e2; }
+.keepsake .scroll-hint,
+.keepsake .promise-caption { color: #e5dfeb; }
+.keepsake .milestone-title,
+.keepsake .milestone-subtitle { color: #292d43; }
+.keepsake #our-story .constellation .celestial-button { color: #292d43; }
+.keepsake #our-story .chapter-tabs .chapter-button { color: #424b62; }
+.keepsake #our-story .chapter-tabs .chapter-button[aria-pressed=true] { color: #fffaf3; }
+.keepsake .scrapbook-tabs .scrap-tab { color: #514b5d; }
+.keepsake .scrapbook-tabs .scrap-tab[aria-selected=true] { color: #fffaf3; }
+.keepsake .moments-section .moment-button { color: #34384d; }
+.keepsake .moments-section .moment-button[aria-pressed=true] { color: #fffaf3; }
+.keepsake .closing-letter .letter-lines p,
+.keepsake .closing-letter .signature { color: #292d43; }
+.keepsake .closing-letter .letter-next { color: #fbf5eb; background: #34334c; border-color: #e7b77b; }
+.keepsake .closing-letter .letter-next:hover { background: #a85f68; }
+.keepsake .sticker-source { color: #34384d; background: #fbf5eb; }
+.keepsake .paper-topline { color: #725251; }
+.keepsake .paper-scribble { color: #8f4354; }
+.keepsake .section-heading h2 em { text-shadow: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .keepsake .section,
+  .keepsake .bubu-note,
+  .keepsake .scrapbook-section,
+  .keepsake .moments-section,
+  .keepsake .closing-section,
+  .keepsake .site-footer,
+  .keepsake .section-heading,
+  .keepsake .section-heading .eyebrow,
+  .keepsake .section-heading h2,
+  .keepsake .section-description,
+  .keepsake .bubu-copy,
+  .keepsake .constellation,
+  .keepsake .timeline-note,
+  .keepsake .chapter-tabs,
+  .keepsake .chapter-note,
+  .keepsake .scrapbook-layout,
+  .keepsake .scrap-footer,
+  .keepsake .moment-buttons,
+  .keepsake .moment-message,
+  .keepsake .closing-letter,
+  .keepsake .promise-area {
+    animation: none !important;
+    filter: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
