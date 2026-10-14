@@ -11,7 +11,7 @@ export const Route = createFileRoute('/')({
     { title: 'A Little Universe, Just for Us · From Jaron to Dear' },
     { name: 'description', content: 'A handwritten little universe for Dear Ilavarasi, from Jaron. Our beginning, everyday moments, and a little promise under the same sky.' },
     { property: 'og:title', content: 'A Little Universe, Just for Us' },
-    { property: 'og:description', content: 'For my Dear, from your Jaron. A small, star-filled keepsake of the things that make us, us.' },
+    { property: 'og:description', content: 'En Dear-ku, Jaron-lirundhu. A small, star-filled keepsake of the things that make us, us.' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
   ] }),
@@ -49,22 +49,37 @@ function Index() {
     <header className="site-header page-width">
       <a href="#top" className="brand" aria-label="Our little universe, back to the beginning"><LittleStar/>Our little universe</a>
       <span className="header-dedication">Jaron & Dear · Since June 8</span>
-      <span className="song-note"><Music2 aria-hidden="true"/>Imagine our song playing</span>
+      <span className="song-note"><Music2 aria-hidden="true"/>Indha page full-ah unakkuthaan</span>
     </header>
     <main>
       <section className="intro" aria-labelledby="gift-title">
         <HerbariumCanvas className="night-image" />
         <Orbit className="orbit-left"/><Orbit className="orbit-right"/>
-        <p className="eyebrow">A little something, only for you</p>
-        <h1 id="gift-title">A Little Universe,<br/><em>Just for Us.</em></h1>
-        <p className="hero-copy">Not the whole world. Just our little corner of it.<br/>Every small moment. Every bit of us.</p>
+        <p className="eyebrow">Unakkaga naan senja chinna vishayam</p>
+        <h1 id="gift-title">En Dear-ku,<br/><em>En manasula irundhu.</em></h1>
+        <p className="hero-copy">Dear, enna sollanum-nu neraya thadava yosichen.<br/>Aana simple-ah sonna… nee enakku romba special.</p>
         <div className={`envelope-wrap ${opened ? 'envelope-open' : ''}`} aria-hidden="true">
           <div className="envelope"><svg className="envelope-seams" viewBox="0 0 340 189" preserveAspectRatio="none"><path d="m0 0 170 113L340 0M0 189l122-102m218 102L218 87"/></svg><div className="envelope-fold"/><div className="wax-seal"><Heart/></div><span className="envelope-address">For my Dear, from your Jaron</span></div>
         </div>
-        {opened && <p className="opening-note" role="status">Dear Ilavarasi,<br/>Nothing grand, nothing perfect. Just a little place for the things I cherish about <span>you and me.</span></p>}
-        <Button variant="keepsake" className="open-letter-button" onClick={openLetter} aria-expanded={opened}>{opened ? <>Our story, this way <ArrowDown/></> : <><Mail/>Open your little letter <ArrowRight/></>}</Button>
-        <p className="small-hand">made with a full heart, for you</p>
-        <div className="scroll-hint"><span>A FEW LITTLE THINGS WORTH KEEPING</span><ArrowDown aria-hidden="true"/></div>
+        {opened && <p className="opening-note" role="status">Dear Ilavarasi,<br/>Idha periya gift-nu solla maaten. Aana namma pathi naan feel panradha, unakku nandri sollanum-nu thonunadha, ellathayum konjam konjama inga vechirukken. <span>Unakkaga dhaan.</span></p>}
+        <Button variant="keepsake" className="open-letter-button" onClick={openLetter} aria-expanded={opened}>{opened ? <>Our story, this way <ArrowDown/></> : <><Mail/>Enna solla vandhen-nu paaru <ArrowRight/></>}</Button>
+        <p className="small-hand">konjam vekkam, neraya love — un Jaron</p>
+        <div className="scroll-hint"><span>NAMMA CHINNA CHINNA MOMENTS</span><ArrowDown aria-hidden="true"/></div>
+      </section>
+      <section className="bubu-note page-width" aria-label="Bubu and Dudu little love note">
+        <div className="bubu-copy">
+          <p className="eyebrow">Namma madhiri konjam cute-ah</p>
+          <h2>Unna paatha enakku <em>ipdi dhaan feel aagum.</em></h2>
+          <p>Enna kalaaichaalum sari, random-ah pesinaalum sari… un kooda pesuradhu enakku pudikkum, Dear. Nee nee-ah irukkuradhe podhum.</p>
+        </div>
+        <div className="bubu-stickers">
+          <a className="bubu-sticker" href="https://tenor.com/view/couples-cute-dudu-bubu-gif-1421351511835873494" target="_blank" rel="noreferrer" aria-label="Open Bubu and Dudu cute couple sticker">
+            <iframe src="https://tenor.com/embed/1421351511835873494" title="Bubu and Dudu standing together" loading="lazy" allow="autoplay; encrypted-media" />
+          </a>
+          <a className="bubu-sticker bubu-sticker-small" href="https://tenor.com/view/dudu-bubu-dudu-bubu-couple-gif-2826150299264616580" target="_blank" rel="noreferrer" aria-label="Open Bubu and Dudu couple sticker">
+            <iframe src="https://tenor.com/embed/2826150299264616580" title="Bubu and Dudu cute couple sticker" loading="lazy" allow="autoplay; encrypted-media" />
+          </a>
+        </div>
       </section>
       <section className="section page-width" id="our-story" ref={storyRef} aria-labelledby="story-title">
         <Heading number="01" label="Our stars, so far" description="Some dates stay with you. Some moments don’t need a date."><span id="story-title">It started with <em>a hello.</em></span></Heading>
