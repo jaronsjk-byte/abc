@@ -73,12 +73,14 @@ function Index() {
           <p>Enna kalaaichaalum sari, random-ah pesinaalum sari… un kooda pesuradhu enakku pudikkum, Dear. Nee nee-ah irukkuradhe podhum.</p>
         </div>
         <div className="bubu-stickers">
-          <a className="bubu-sticker" href="https://tenor.com/view/couples-cute-dudu-bubu-gif-1421351511835873494" target="_blank" rel="noreferrer" aria-label="Open Bubu and Dudu cute couple sticker">
-            <iframe src="https://tenor.com/embed/1421351511835873494" title="Bubu and Dudu standing together" loading="lazy" allow="autoplay; encrypted-media" />
-          </a>
-          <a className="bubu-sticker bubu-sticker-small" href="https://tenor.com/view/dudu-bubu-dudu-bubu-couple-gif-2826150299264616580" target="_blank" rel="noreferrer" aria-label="Open Bubu and Dudu couple sticker">
-            <iframe src="https://tenor.com/embed/2826150299264616580" title="Bubu and Dudu cute couple sticker" loading="lazy" allow="autoplay; encrypted-media" />
-          </a>
+          <div className="bubu-sticker">
+            <iframe src="https://tenor.com/embed/1421351511835873494" title="Bubu and Dudu standing together" loading="eager" allow="autoplay; encrypted-media; picture-in-picture" />
+            <a className="sticker-source" href="https://tenor.com/view/couples-cute-dudu-bubu-gif-1421351511835873494" target="_blank" rel="noreferrer">Via Tenor ↗</a>
+          </div>
+          <div className="bubu-sticker bubu-sticker-small">
+            <iframe src="https://tenor.com/embed/2826150299264616580" title="Bubu and Dudu cute couple sticker" loading="eager" allow="autoplay; encrypted-media; picture-in-picture" />
+            <a className="sticker-source" href="https://tenor.com/view/dudu-bubu-dudu-bubu-couple-gif-2826150299264616580" target="_blank" rel="noreferrer">Via Tenor ↗</a>
+          </div>
         </div>
       </section>
       <section className="section page-width" id="our-story" ref={storyRef} aria-labelledby="story-title">
