@@ -361,3 +361,10 @@
 @media(prefers-reduced-motion:reduce) {
   .intro::before,.intro h1,.intro .eyebrow,.intro .hero-copy,.envelope-wrap,.envelope,.orbit-left,.orbit-right { animation:none !important; }
 }
+
+/* Direct Tenor GIFs: render the animated media itself, not an embed page inside an iframe. */
+.bubu-sticker img { position:absolute; inset:0; width:100%; height:calc(100% - 27px); object-fit:contain; display:block; padding:8px; }
+.bubu-sticker-small img { height:calc(100% - 27px); }
+.particle-opening { margin-block: 0 28px; border-radius: 28px; overflow:hidden; box-shadow: 0 26px 90px rgba(0,0,0,.28); }
+@media(max-width:700px) { .particle-opening { margin-inline: 12px; border-radius:20px; } }
+@media(prefers-reduced-motion:reduce) { .particle-opening { box-shadow:none; } }
