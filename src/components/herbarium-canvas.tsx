@@ -37,7 +37,6 @@ export function HerbariumCanvas({ className = '' }: HerbariumCanvasProps) {
       source.width = Math.max(1, Math.ceil(width / cellSize));
       source.height = Math.max(1, Math.ceil(height / cellSize));
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      draw(performance.now());
     };
 
     const draw = (now: number) => {
