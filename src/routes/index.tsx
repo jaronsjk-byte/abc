@@ -9,9 +9,9 @@ import { chapters, closingLines, milestones, scrapbook, tinyMoments } from '@/li
 
 export const Route = createFileRoute('/')({
   head: () => ({ meta: [
-    { title: 'Dear's Little Mood Garden · A tiny happy place' },
+    { title: "Dear’s Little Mood Garden · A tiny happy place" },
     { name: 'description', content: 'A playful little mood garden with tiny notes, silly moments, and gentle reminders for Dear.' },
-    { property: 'og:title', content: 'Dear's Little Mood Garden' },
+    { property: "og:title", content: "Dear’s Little Mood Garden" },
     { property: 'og:description', content: 'A tiny garden of smiles, soft pauses, and kind words for Dear.' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
@@ -56,24 +56,24 @@ function Index() {
     <a href="#our-story" className="skip-link">Skip to the garden</a>
     <header className="site-header page-width">
       <a href="#top" className="brand" aria-label="Dear's Mood Garden, back to the beginning"><LittleStar/>Our little universe</a>
-      <span className="header-dedication">A tiny corner made with care</span>
-      <span className="song-note"><Music2 aria-hidden="true"/>Pick your mood, Dear</span>
+      <span className="header-dedication">A little world with many moods</span>
+      <span className="song-note"><Music2 aria-hidden="true"/>Made for your kind of chaos</span>
     </header>
     <main>
       <section className="particle-opening page-width" aria-label="Animated mood garden opening"><ParticleDissolveCarousel items={moodSlides as ParticleDissolveItem[]} height="min(88svh, 900px)" particles={80000} autoplay={6500} pattern="sweep" glow={0.8} dust={0.18} backdrop="#171329" /></section>
       <section className="intro" aria-labelledby="gift-title">
         <HerbariumCanvas className="night-image" />
         <Orbit className="orbit-left"/><Orbit className="orbit-right"/>
-        <p className="eyebrow">WELCOME TO YOUR LITTLE ESCAPE</p>
-        <h1 id="gift-title">Hey, Dear,<br/><em>Konjam happy-ah iruppom.</em></h1>
-        <p className="hero-copy">Inga konjam silliness, konjam calm, konjam kind words irukku.<br/>Un mood-ku etha maadhiri explore pannikko.</p>
+        <p className="eyebrow">A SMALL WORLD, JUST FOR YOU</p>
+        <h1 id="gift-title">Dear’s little<br/><em>everything-place.</em></h1>
+        <p className="hero-copy">Konjam chaos, konjam colour, konjam calm — unakku enna thevaiyo adha choose pannikko. Idhu un mood-ku oru chinna world.</p>
         <div className={`envelope-wrap ${opened ? 'envelope-open' : ''}`} aria-hidden="true">
-          <div className="envelope"><svg className="envelope-seams" viewBox="0 0 340 189" preserveAspectRatio="none"><path d="m0 0 170 113L340 0M0 189l122-102m218 102L218 87"/></svg><div className="envelope-fold"/><div className="wax-seal"><Heart/></div><span className="envelope-address">Made with a little sparkle</span></div>
+          <div className="envelope"><svg className="envelope-seams" viewBox="0 0 340 189" preserveAspectRatio="none"><path d="m0 0 170 113L340 0M0 189l122-102m218 102L218 87"/></svg><div className="envelope-fold"/><div className="wax-seal"><Heart/></div><span className="envelope-address">Open when you need a little something</span></div>
         </div>
         {opened && <p className="opening-note" role="status">Hey Dear,<br/>Idhu un mini mood corner. Sirippu venumna silly section, rest venumna quiet corner. <span>Un pace-la explore pannu.</span></p>}
-        <Button variant="keepsake" className="open-letter-button" onClick={openLetter} aria-expanded={opened}>{opened ? <>Explore the garden <ArrowDown/></> : <><Mail/>Open your happy corner <ArrowRight/></>}</Button>
+        <Button variant="keepsake" className="open-letter-button" onClick={openLetter} aria-expanded={opened}>{opened ? <>Explore the garden <ArrowDown/></> : <><Mail/>Step into your little world <ArrowRight/></>}</Button>
         <p className="small-hand">konjam sparkle, konjam silliness ✨</p>
-        <div className="scroll-hint"><span>PICK A MOOD TO BEGIN</span><ArrowDown aria-hidden="true"/></div>
+        <div className="scroll-hint"><span>SCROLL AROUND · FOLLOW YOUR MOOD</span><ArrowDown aria-hidden="true"/></div>
       </section>
       <section className="bubu-note page-width" aria-label="Bubu and Dudu silly corner">
         <div className="bubu-copy">
