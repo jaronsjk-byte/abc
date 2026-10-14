@@ -81,14 +81,18 @@ function Index() {
           <h2>Inga konjam <em>comedy nadakkum.</em></h2>
           <p>Bubu-Dudu rendu perum summa irukka maataanga. Avanga antics paaru; unakku pudicha GIF-a click pannalaam.</p>
         </div>
-        <div className="bubu-stickers">
+        <div className="bubu-stickers sticker-spread">
           <div className="bubu-sticker">
-            <img src="https://c.tenor.com/xzOoHR8-uzcAAAAd/tenor.gif" alt="Animated Bubu and Dudu hugging" loading="eager" decoding="async" />
-            <a className="sticker-source" href="https://tenor.com/view/couples-cute-dudu-bubu-gif-1421351511835873494" target="_blank" rel="noreferrer">Via Tenor ↗</a>
+            <img src="https://c.tenor.com/xzOoHR8-uzcAAAAd/tenor.gif" alt="Bubu and Dudu hugging" loading="lazy" decoding="async" />
+            <a className="sticker-source" href="https://tenor.com/view/couples-cute-dudu-bubu-gif-1421351511835873494" target="_blank" rel="noreferrer">Hug mood · Tenor ↗</a>
           </div>
           <div className="bubu-sticker bubu-sticker-small">
-            <img src="https://media.tenor.com/JziAuT2ICIQAAAAj/dudu-bubu-dudu-bubu-couple.gif" alt="Animated Bubu and Dudu sitting together" loading="eager" decoding="async" />
-            <a className="sticker-source" href="https://tenor.com/view/dudu-bubu-dudu-bubu-couple-gif-2826150299264616580" target="_blank" rel="noreferrer">Via Tenor ↗</a>
+            <img src="https://media.tenor.com/JziAuT2ICIQAAAAj/dudu-bubu-dudu-bubu-couple.gif" alt="Bubu and Dudu sitting together" loading="lazy" decoding="async" />
+            <a className="sticker-source" href="https://tenor.com/view/dudu-bubu-dudu-bubu-couple-gif-2826150299264616580" target="_blank" rel="noreferrer">Chill mood · Tenor ↗</a>
+          </div>
+          <div className="bubu-sticker sticker-extra">
+            <img src="https://tenor.com/mn8H49dw2ek.gif" alt="Bubu and Dudu sharing a cute kiss" loading="lazy" decoding="async" />
+            <a className="sticker-source" href="https://tenor.com/mn8H49dw2ek.gif" target="_blank" rel="noreferrer">Cute mood · Tenor ↗</a>
           </div>
         </div>
       </section>
