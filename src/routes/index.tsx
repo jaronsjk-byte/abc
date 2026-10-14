@@ -98,7 +98,7 @@ function Index() {
         </div>
         <div className="bubu-stickers sticker-spread">
           <div className="bubu-sticker">
-            <img src="https://media.tenor.com/JziAuT2ICIQAAAAj/dudu-bubu-dudu-bubu-couple.gif" alt="Bubu and Dudu hugging" loading="lazy" decoding="async" />
+            <img src="https://media1.tenor.com/m/i3odg_Ccil8AAAAd/bubu-dudu-dudu.gif" alt="Bubu and Dudu hugging" loading="lazy" decoding="async" />
             <a className="sticker-source" href="https://tenor.com/view/couples-cute-dudu-bubu-gif-1421351511835873494" target="_blank" rel="noreferrer">Hug mood · Tenor ↗</a>
           </div>
           <div className="bubu-sticker bubu-sticker-small">
