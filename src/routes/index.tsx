@@ -83,11 +83,11 @@ function Index() {
         </div>
         <div className="bubu-stickers">
           <div className="bubu-sticker">
-            <iframe src="https://tenor.com/embed/1421351511835873494" title="Bubu and Dudu standing together" loading="eager" allow="autoplay; encrypted-media; picture-in-picture" />
+            <img src="https://c.tenor.com/xzOoHR8-uzcAAAAd/tenor.gif" alt="Animated Bubu and Dudu hugging" loading="eager" decoding="async" />
             <a className="sticker-source" href="https://tenor.com/view/couples-cute-dudu-bubu-gif-1421351511835873494" target="_blank" rel="noreferrer">Via Tenor ↗</a>
           </div>
           <div className="bubu-sticker bubu-sticker-small">
-            <iframe src="https://tenor.com/embed/2826150299264616580" title="Bubu and Dudu cute couple sticker" loading="eager" allow="autoplay; encrypted-media; picture-in-picture" />
+            <img src="https://media.tenor.com/JziAuT2ICIQAAAAj/dudu-bubu-dudu-bubu-couple.gif" alt="Animated Bubu and Dudu sitting together" loading="eager" decoding="async" />
             <a className="sticker-source" href="https://tenor.com/view/dudu-bubu-dudu-bubu-couple-gif-2826150299264616580" target="_blank" rel="noreferrer">Via Tenor ↗</a>
           </div>
         </div>
