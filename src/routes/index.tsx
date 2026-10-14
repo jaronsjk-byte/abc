@@ -3,6 +3,7 @@ import { useRef, useState } from 'react';
 import { ArrowDown, ArrowRight, Check, Heart, Mail, MessageCircle, Moon, Music2, Phone, Smile, Sparkles, Eye } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { KeepsakeArt, LittleStar } from '@/components/keepsake-art';
+import ParticleDissolveCarousel, { type ParticleDissolveItem } from '@/components/ui/particle-dissolve-carousel';
 import { HerbariumCanvas } from '@/components/herbarium-canvas';
 import { chapters, closingLines, milestones, scrapbook, tinyMoments } from '@/lib/keepsake';
 
@@ -28,6 +29,13 @@ function Divider() { return <div className="section-divider"><LittleStar/></div>
 const scrapIcons = [MessageCircle, Sparkles, Eye, Phone, Heart];
 const momentIcons = [Smile, Moon, Heart];
 
+
+const moodSlides = [
+  { src: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#1c1732"/><stop offset=".5" stop-color="#7f456b"/><stop offset="1" stop-color="#f1b7a7"/></linearGradient><radialGradient id="r"><stop stop-color="#ffd7c7" stop-opacity=".95"/><stop offset="1" stop-color="#ffb4cb" stop-opacity="0"/></radialGradient></defs><rect width="1600" height="1000" fill="url(#g)"/><circle cx="1160" cy="270" r="360" fill="url(#r)"/><g fill="#ffe4c9" opacity=".9"><circle cx="180" cy="140" r="3"/><circle cx="420" cy="280" r="4"/><circle cx="730" cy="160" r="2"/><circle cx="1360" cy="520" r="3"/><circle cx="1040" cy="690" r="2"/><circle cx="260" cy="720" r="3"/></g><g fill="none" stroke="#f7d7d7" stroke-opacity=".7"><path d="M0 810Q240 670 480 820T960 800T1600 780" stroke-width="2"/><path d="M0 850Q240 710 480 860T960 840T1600 820" stroke-width="1"/></g><g transform="translate(1180 530)" fill="#ffd8df" opacity=".8"><ellipse rx="40" ry="115" transform="rotate(0) translate(0 -78)"/><ellipse rx="40" ry="115" transform="rotate(60) translate(0 -78)"/><ellipse rx="40" ry="115" transform="rotate(120) translate(0 -78)"/><circle r="38" fill="#f5c36e"/></g></svg>`), eyebrow: "YOUR LITTLE ESCAPE", title: "A softer kind of day", caption: "No rush. No rules. Just a little space to feel good.", alt: "Pastel twilight garden with a glowing flower" },
+  { src: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"><defs><linearGradient id="g" x2="0" y2="1"><stop stop-color="#f7b6c8"/><stop offset="1" stop-color="#f9dfc1"/></linearGradient></defs><rect width="1600" height="1000" fill="url(#g)"/><g fill="#fff1e8" opacity=".55"><circle cx="280" cy="250" r="160"/><circle cx="420" cy="250" r="190"/><circle cx="360" cy="180" r="140"/><circle cx="1240" cy="680" r="220"/><circle cx="1370" cy="660" r="160"/></g><g fill="#9b5b7b" opacity=".45"><circle cx="700" cy="340" r="8"/><circle cx="740" cy="310" r="5"/><circle cx="780" cy="360" r="7"/><circle cx="1110" cy="260" r="6"/><circle cx="1140" cy="290" r="4"/></g><g fill="none" stroke="#fff6ef" stroke-width="5" stroke-linecap="round" opacity=".75"><path d="M210 650q100 -80 200 0t200 0t200 0"/><path d="M790 740q100 -80 200 0t200 0t200 0"/></g></svg>`), eyebrow: "SMILE MODE", title: "A little silly, a lot lovely", caption: "Let the serious stuff wait outside for a minute.", alt: "Soft pink and peach clouds with playful floating dots" },
+  { src: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#12172f"/><stop offset=".55" stop-color="#34466b"/><stop offset="1" stop-color="#d38ea9"/></linearGradient></defs><rect width="1600" height="1000" fill="url(#g)"/><circle cx="1180" cy="230" r="120" fill="#fff1d2"/><circle cx="1235" cy="190" r="110" fill="#34466b"/><g fill="#fff1d2"><circle cx="250" cy="190" r="4"/><circle cx="490" cy="340" r="3"/><circle cx="790" cy="150" r="4"/><circle cx="960" cy="440" r="3"/><circle cx="1420" cy="430" r="4"/><circle cx="360" cy="590" r="3"/><circle cx="680" cy="740" r="4"/><circle cx="1320" cy="720" r="3"/></g><path d="M0 800Q280 680 540 820T1050 800T1600 790V1000H0Z" fill="#191d39" opacity=".7"/><g fill="none" stroke="#f7d3e4" stroke-width="3" opacity=".65"><path d="M300 800q30 -90 60 0t60 0t60 0"/><path d="M1000 850q30 -90 60 0t60 0t60 0"/></g></svg>`), eyebrow: "QUIET CORNER", title: "Breathe. You have time.", caption: "One small pause can be enough for now.", alt: "A dreamy crescent moon over a twilight landscape" },
+];
+
 function Index() {
   const [opened, setOpened] = useState(false);
   const [milestone, setMilestone] = useState(0);
@@ -52,6 +60,7 @@ function Index() {
       <span className="song-note"><Music2 aria-hidden="true"/>Pick your mood, Dear</span>
     </header>
     <main>
+      <section className="particle-opening page-width" aria-label="Animated mood garden opening"><ParticleDissolveCarousel items={moodSlides as ParticleDissolveItem[]} height="min(88svh, 900px)" particles={80000} autoplay={0} pattern="sweep" glow={0.8} dust={0.18} backdrop="#171329" /></section>
       <section className="intro" aria-labelledby="gift-title">
         <HerbariumCanvas className="night-image" />
         <Orbit className="orbit-left"/><Orbit className="orbit-right"/>
