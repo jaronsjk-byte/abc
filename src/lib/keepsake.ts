@@ -1,34 +1,34 @@
 export const milestones = [
-  { id: 'sunshine', date: 'MOOD 01', title: 'Tiny sunshine', subtitle: 'For your softer days', note: 'Dear, indha corner unakku oru chinna sunshine maadhiri irukkanum. Ellaa naalum perfect-ah irukkanum-nu illa; konjam light, konjam calm, konjam smile irundha podhum.' },
-  { id: 'giggles', date: 'MOOD 02', title: 'Giggle mode', subtitle: 'No reason needed', note: 'Inga serious-ah irukka rule illa. Random-ah sirichaa okay, mokka joke-ku sirichaa kooda okay. Indha page oda mission simple: un face-la oru chinna smile vara veikanum.' },
-  { id: 'calm', date: 'MOOD 03', title: 'A quiet corner', subtitle: 'No pressure, just breathe', note: 'Sila neram words venam. Konjam rest, un favourite song, water, and unakku pudicha small things. Nee ellathayum ore naal-la solve pannanum-nu avasiyam illa.' },
+  { id: 'sunshine', date: 'MOOD 01', title: 'A little lift', subtitle: 'When the day feels long', note: 'Hey Dear, konjam tired-ah irundha inga ukkandhuko. Edhuvum explain panna thevai illa. Unakku pudicha paatu pottu, konjam rest edu. Appuram paathukkalaam.' },
+  { id: 'giggles', date: 'MOOD 02', title: 'Silly hours', subtitle: 'For no reason at all', note: 'Seri, ippo konjam loosu thanam pannalaama? 😂 Bubu-Dudu madhiri rendu perum serious face potutu comedy pannura scene-a imagine pannu. Sirippu vandha bonus; varalana innoru mokka joke ready.' },
+  { id: 'calm', date: 'MOOD 03', title: 'Take five', subtitle: 'Nothing to prove right now', note: 'Innikki romba busy-ah irundha, konjam phone-a keezha vechuttu relax pannu. Ellame ippo mudikkanum-nu illa, Dear. Oru chinna break eduthuttu thirumba paaru.' },
 ] as const;
 
 export const chapters = [
-  { month: 'SMILE', title: 'A tiny happy break', note: 'Indha page-a open pannumbodhu, konjam work/stress ellam side-la vechuttu breathe pannu. Unakku pudicha oru song podu. Idhu un mini break.' },
-  { month: 'PLAY', title: 'Choose silly over serious', note: 'Inga rules romba simple: konjam imagination, konjam silliness, zero pressure. Unakku pudicha colour choose pannu; un mood-ku nee dhaan boss.' },
-  { month: 'PAUSE', title: 'Rest is allowed', note: 'Busy day-na slow down pannalaam. Ellathukkum immediate answer thevai illa. Oru glass water, deep breath, and small pause — idhuvum progress dhaan.' },
-  { month: 'DREAM', title: 'Keep a little wonder', note: 'Un mind-la irukkura chinna dreams-kooda important. Periya plan ready-ah irukkanum-nu illa; innikku oru tiny step podhum.' },
+  { month: 'SMILE', title: 'Oru chinna sirippu', note: 'Indha page open pannirukka la, seri konjam break eduppom. Unakku pudicha song podu illa random reels paaru. Work ellam konjam neram wait pannattum.' },
+  { month: 'PLAY', title: 'Konjam kurumbu', note: 'Inga edhuvum correct-ah panna vendiyadhu illa. Unakku thonradha choose pannu, konjam silly-ah iru. Indha corner-la rules romba kammi.' },
+  { month: 'PAUSE', title: 'Konjam rest edu', note: 'Mind full-ah irundha ellathayum ore nerathula sort panna try pannadha. Water kudichuttu, comfortable-ah ukkandhu, konjam breathe pannu. Adhu podhum ippo.' },
+  { month: 'DREAM', title: 'Un aasai list', note: 'Unakku try pannanum-nu thonra vishayatha nyabagam vechuko. Ellathayum innikke achieve pannanum-nu illa. Time irukku; un pace-la po.' },
 ] as const;
 
 export const scrapbook = [
-  { icon: 'chat', label: 'Tiny note', title: 'A small reminder for today.', note: 'Dear, nee ellarukkum strong-ah irukkanum-nu avasiyam illa. Konjam tired-ah irundhaalum okay. Unakku nee konjam kindness kuduthuko.', scribble: 'be gentle with yourself', number: '01' },
-  { icon: 'spark', label: 'Giggle box', title: 'Official silly-thought department.', note: 'Urgent announcement: innikku minimum oru thadava sirikkanum. Reason kidaikkala-na, random-ah oru funny face pannu. Idhu scientific research illa… en personal rule 😂', scribble: 'certified nonsense', number: '02' },
-  { icon: 'eye', label: 'Dream window', title: 'Imagine something lovely.', note: 'Oru peaceful evening, favourite snack, phone silent, mind calm. Unakku perfect day eppadi irukkum-nu imagine pannu. Small happiness-kum space kudukkalaam.', scribble: 'one day, one little dream', number: '03' },
-  { icon: 'phone', label: 'Tiny reset', title: 'Pause. Breathe. Start again.', note: 'Screen-a konjam lock pannitu shoulders relax pannu. Slow-ah breathe in, slow-ah breathe out. Ready aana apram next small thing mattum pannu. One step is enough.', scribble: 'reset, not restart', number: '04' },
-  { icon: 'heart', label: 'Kind words', title: 'You deserve your own kindness.', note: 'Unakku nee pesura words-um gentle-ah irukkattum. Oru mistake un whole day-ai define pannaadhu. Konjam neram eduthukkalaam; next try-ku innum chance irukku.', scribble: 'you can begin again', number: '05' },
+  { icon: 'chat', label: 'Tiny note', title: 'Hey Dear, oru vishayam.', note: 'Ellar munnaadiyum strong-ah nadikkanum-nu avasiyam illa. Tired-ah irundha tired-nu othukko. Unakkum konjam care venum, adha marandhudadha.', scribble: 'konjam unakkagavum', number: '01' },
+  { icon: 'spark', label: 'Giggle box', title: 'Mukkiyamaana arivippu 😂', note: 'Innikki oru sirippu compulsory-nu naan rule podren. Reason illana parava illa; Bubu-Dudu rendu perum meeting-la irukkuradha imagine pannu. Meeting topic: biscuit yaar saaptaanga?', scribble: 'romba serious nonsense', number: '02' },
+  { icon: 'eye', label: 'Dream window', title: 'Un perfect evening eppadi?', note: 'Mazhai, favourite snack, nalla song, yaarum disturb pannaadha neram… unakku pudicha maadhiri imagine pannu. Andha chinna aasaiya kooda enjoy pannalaam.', scribble: 'idhu nalla irukkum la?', number: '03' },
+  { icon: 'phone', label: 'Tiny reset', title: 'Konjam screen break.', note: 'Kannukku rest kudu, shoulders relax pannu. Konjam water kudichuttu thirumba vaa. Pending irukkuradhellam odane mudikkanum-nu pressure eduthukkaadha.', scribble: 'seri, ippo better', number: '04' },
+  { icon: 'heart', label: 'Kind words', title: 'Un mela konjam soft-ah iru.', note: 'Oru naal nalla pogala-na adhu un thappu-nu artham illa. Mistake aana sari pannalaam; mudiyala-na konjam neram edukkalaam. Naalaikku innoru chance irukku.', scribble: 'slow-ah ponaalum parava illa', number: '05' },
 ] as const;
 
 export const tinyMoments = [
-  { label: 'Make me smile', icon: 'smile', title: 'Smile mission unlocked.', message: 'Dear, imagine Bubu wearing tiny sunglasses and Dudu acting like the manager. No plot, no logic, full confidence. Okay, now at least one small smile please 😌' },
-  { label: 'Need a pause', icon: 'moon', title: 'A little quiet is okay.', message: 'Indha minute-la edhuvum prove panna thevai illa. Konjam relax pannu, water kudichuko, un favourite calm song kelu. Ready aana apram un pace-la continue pannalaam.' },
-  { label: 'Read a kind note', icon: 'heart', title: 'One kind thing, just for you.', message: 'Dear, un worth-ai innikku nee achieve pannadhoda mattum measure pannaadha. Nee rest edukkalaam, learn pannalaam, thappu pannitu thirumba try pannalaam. Take it one step at a time.' },
+  { label: 'Make me smile', icon: 'smile', title: 'Oru scene imagine pannu 😂', message: 'Bubu sunglasses pottutu romba geth-ah nadandhu varaan. Dudu pinnadi “dei, namma enga porom?” nu kekkudhu. Bubu-ku destination-e theriyadhu, aana confidence mattum full. Sirichiya, Dear? 😌' },
+  { label: 'Need a pause', icon: 'moon', title: 'Seri, konjam rest.', message: 'Ippo ellathukkum reply kudukkanum, ellathayum mudikkanum-nu avasiyam illa. Water kudichuttu, unakku pudicha paatu kelu. Konjam neram unakkaga vechuko.' },
+  { label: 'Read a kind note', icon: 'heart', title: 'Unakku oru reminder.', message: 'Innikki nee evlo work pannina-nu vechu mattum unna judge pannadha, Dear. Rest edukkardhum okay, thappu pannardhum okay. Konjam konjama kathukittu po; avasaram illa.' },
 ] as const;
 
 export const closingLines = [
-  'Hey, my Dear ✨',
-  'Indha chinna corner unakku konjam happy break kudukkanum-nu create panninen. Inga perfect-ah irukkanum-nu rule illa; nee unmaiya nee-ah irundha podhum.',
-  'Unakku sirippu venumna giggle box irukku. Calm venumna quiet corner irukku. Konjam motivation venumna kind note irukku. Mood-ku etha maadhiri choose pannikko.',
-  'Un day eppadi irundhaalum, adha konjam konjama handle pannalaam. Ellathayum ore shot-la fix pannanum-nu pressure edukkaadha, Dear.',
-  'A little pocket of happy, made just for you. 🤍',
+  'Hey Dear, ❤️',
+  'Indha page create pannumbodhu, nee open panni paathu konjam siricha podhum-nu dhaan nenachen. Idhu periya advice page illa; unakku bore adikkumbodhu illa mood seri illaadhappo konjam time spend panna oru chinna place.',
+  'Sila naal semma jolly-ah irukkum, sila naal onnum panna thonadhu. Rendum normal dhaan. Unakku enna venumo adha inga choose pannu — illa appadiye close pannittu po. No pressure.',
+  'And hey, unakku ellame therinjirukkanum-nu illa. Confuse aanaalum parava illa; konjam rest eduthu apram paathukkalaam.',
+  'Unakku mattum, konjam care-oda. 🤍',
 ] as const;
