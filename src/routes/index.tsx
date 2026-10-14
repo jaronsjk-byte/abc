@@ -3,6 +3,7 @@ import { useRef, useState } from 'react';
 import { ArrowDown, ArrowRight, Check, Heart, Mail, MessageCircle, Moon, Music2, Phone, Smile, Sparkles, Eye } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { KeepsakeArt, LittleStar } from '@/components/keepsake-art';
+import { HerbariumCanvas } from '@/components/herbarium-canvas';
 import { chapters, closingLines, milestones, scrapbook, tinyMoments } from '@/lib/keepsake';
 
 export const Route = createFileRoute('/')({
@@ -52,7 +53,7 @@ function Index() {
     </header>
     <main>
       <section className="intro" aria-labelledby="gift-title">
-        <div className="night-image" aria-hidden="true" />
+        <HerbariumCanvas className="night-image" />
         <Orbit className="orbit-left"/><Orbit className="orbit-right"/>
         <p className="eyebrow">A little something, only for you</p>
         <h1 id="gift-title">A Little Universe,<br/><em>Just for Us.</em></h1>
