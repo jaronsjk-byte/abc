@@ -102,11 +102,11 @@ function Index() {
             <a className="sticker-source" href="https://tenor.com/view/couples-cute-dudu-bubu-gif-1421351511835873494" target="_blank" rel="noreferrer">Hug mood · Tenor ↗</a>
           </div>
           <div className="bubu-sticker bubu-sticker-small">
-            <img src="https://media.tenor.com/JziAuT2ICIQAAAAj/dudu-bubu-dudu-bubu-couple.gif" alt="Bubu and Dudu sitting together" loading="lazy" decoding="async" />
+            <img src="https://media.tenor.com/pN7xf12qQcwAAAAM/cuddle-cute.gif" alt="Bubu and Dudu sitting together" loading="lazy" decoding="async" />
             <a className="sticker-source" href="https://tenor.com/view/dudu-bubu-dudu-bubu-couple-gif-2826150299264616580" target="_blank" rel="noreferrer">Chill mood · Tenor ↗</a>
           </div>
           <div className="bubu-sticker sticker-extra">
-            <img src="https://media.tenor.com/JziAuT2ICIQAAAAj/dudu-bubu-dudu-bubu-couple.gif" alt="Bubu and Dudu sharing a cute moment" loading="lazy" decoding="async" />
+            <img src="https://media.tenor.com/ZgEwD09MywgAAAAM/dudu-kissing-bubu-hearts.gif" alt="Bubu and Dudu sharing a cute moment" loading="lazy" decoding="async" />
             <a className="sticker-source" href="https://tenor.com/mn8H49dw2ek.gif" target="_blank" rel="noreferrer">Cute mood · Tenor ↗</a>
           </div>
         </div>
@@ -145,7 +145,7 @@ function Index() {
         <div className="closing-letter"><LittleStar className="letter-star"/><div className="letter-lines" aria-live="polite">{closingLines.slice(0,lineCount).map((line,i)=><p key={i}>{line}</p>)}</div>
           {!allRead ? <Button variant="outline" className="letter-next" onClick={()=>setLineCount(count=>Math.min(count+1,closingLines.length))}>Unfold a little more <ArrowDown/></Button> : <div className="signature"><small>With love,</small>Your Jaron</div>}
         </div>
-        {allRead && <div className="promise-area arrive">{kept && <div className="promise-stars" aria-hidden="true"><LittleStar/><Heart/><LittleStar/><Heart/><LittleStar/><LittleStar/></div>}<Button variant="keepsake" className="promise-button" onClick={()=>setKept(true)} disabled={kept}>{kept ? <><Check/>A little promise, kept here</> : <><Heart/>Keep this little promise</>}</Button><p className="promise-caption" role="status">{kept ? 'To listen. To speak honestly. To keep making memories together.' : 'Not a perfect forever. Just a little more care, every day.'}</p><div className="final-love-note" aria-label="Final love note"><p>Luvv you, my baby wifeee <Heart aria-hidden="true" fill="currentColor"/></p><img src="https://media.tenor.com/JziAuT2ICIQAAAAj/dudu-bubu-dudu-bubu-couple.gif" alt="Bubu and Dudu hugging at the end of the love note" loading="lazy" decoding="async"/></div></div>}
+        {allRead && <div className="promise-area arrive">{kept && <div className="promise-stars" aria-hidden="true"><LittleStar/><Heart/><LittleStar/><Heart/><LittleStar/><LittleStar/></div>}<Button variant="keepsake" className="promise-button" onClick={()=>setKept(true)} disabled={kept}>{kept ? <><Check/>A little promise, kept here</> : <><Heart/>Keep this little promise</>}</Button><p className="promise-caption" role="status">{kept ? 'To listen. To speak honestly. To keep making memories together.' : 'Not a perfect forever. Just a little more care, every day.'}</p><div className="final-love-note" aria-label="Final love note"><p>Luvv you, my baby wifeee <Heart aria-hidden="true" fill="currentColor"/></p><img src="https://media.tenor.com/K-M6dzT_W_cAAAAM/bubu-dudu-sseeyall.gif" alt="Bubu and Dudu hugging at the end of the love note" loading="lazy" decoding="async"/></div></div>}
       </section>
     </main>
     <footer className="site-footer page-width"><span className="footer-love">Unakkaga create pannadhu.</span><span>One tiny corner of the internet, just for you 🤍</span></footer>
