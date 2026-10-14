@@ -416,50 +416,50 @@ a:hover { text-underline-offset: 5px; }
 }
 
 /* Art direction overhaul: each chapter now has its own palette and composition. */
-.keepsake{background:radial-gradient(ellipse at 8% 10%,rgba(128,93,190,.2),transparent 30%),#141422;color:#f7f0e5}
+.keepsake{background:radial-gradient(ellipse at 8% 10%,rgba(128,93,190,.2),transparent 30%),#141422;color:#f7f2e7}
 .site-header{border-bottom:1px solid rgba(247,240,229,.14)}
 .particle-opening{margin-top:20px;border-radius:8px 8px 84px 8px;box-shadow:0 35px 100px #0005}
 .intro{background:linear-gradient(180deg,#141422,#24203b 55%,#3b2949);padding-inline:24px}
-.intro h1{color:#f7f0e5}.intro h1 em{color:#ffb38f}.intro .eyebrow{color:#c6b5ff}.hero-copy{color:#f7f0e5bf}
+.intro h1{color:#f7f2e7}.intro h1 em{color:#ffb38f}.intro .eyebrow{color:#c6b5ff}.hero-copy{color:#f7f2e7bf}
 .open-letter-button{background:#ff956d!important;color:#201a2b!important}.small-hand{color:#c6b5ff}
 /* Peach sticker spread */
-.bubu-note{width:100%;max-width:none;padding-inline:max(5vw,calc((100vw - 1120px)/2));display:grid;grid-template-columns:minmax(0,.9fr) minmax(320px,1.1fr);align-items:center;gap:clamp(30px,7vw,110px);color:#34223c;background:#f5c5b9;position:relative;overflow:hidden}
-.bubu-copy .eyebrow{color:#8d4c66}.bubu-copy h2{color:#34223c}.bubu-copy h2 em{color:#a84659}.bubu-copy>p:last-child{color:#654554}
+.bubu-note{width:100%;max-width:none;padding-inline:max(5vw,calc((100vw - 1120px)/2));display:grid;grid-template-columns:minmax(0,.9fr) minmax(320px,1.1fr);align-items:center;gap:clamp(30px,7vw,110px);color:#24372e;background:#d9e4cf;position:relative;overflow:hidden}
+.bubu-copy .eyebrow{color:#54785d}.bubu-copy h2{color:#24372e}.bubu-copy h2 em{color:#bd5d3b}.bubu-copy>p:last-child{color:#4f6253}
 .bubu-stickers{justify-content:center;gap:clamp(14px,3vw,42px)}
-.bubu-sticker{width:min(48%,280px);border-radius:46% 46% 22px 22px;border:2px solid #ffffffcc;background:#fff1e4;box-shadow:12px 18px 0 #7436521f;transform:rotate(-5deg)}
+.bubu-sticker{width:min(48%,280px);border-radius:46% 46% 22px 22px;border:2px solid #ffffffcc;background:#f7f2e7;box-shadow:12px 18px 0 #24372e1f;transform:rotate(-5deg)}
 .bubu-sticker-small{transform:translateY(34px) rotate(5deg);border-radius:22px 22px 46% 46%}
-.sticker-source{color:#654554;background:#fff1e4}
+.sticker-source{color:#4f6253;background:#f7f2e7}
 /* Lavender mood map */
-#our-story.section{width:100%;max-width:none;padding-inline:max(5vw,calc((100vw - 1120px)/2));color:#22213a;background:#d9d2ff;position:relative;overflow:hidden}
-#our-story .section-heading h2{color:#22213a}#our-story .section-heading h2 em{color:#6955b0}#our-story .eyebrow{color:#6955b0}#our-story .section-description{color:#5c567e}
-.constellation{margin-block:52px 26px;padding:30px 18px;border-block:1px solid #49378f47}
-.constellation .celestial-button{color:#292541}
-.constellation .celestial-button[aria-pressed=true]{background:#ffffff8c;box-shadow:0 12px 34px #4331781a;border-radius:18px}
-.star-node{background:#6955b0;color:white}
-.timeline-note{max-width:760px;margin:24px auto 44px;padding:24px 28px;border-left:3px solid #6955b0;background:#ffffff75;color:#35304f;border-radius:0 18px 18px 0}
-.chapter-tabs .chapter-button{border-radius:4px;border:1px solid #49378f4d;color:#51467f}
-.chapter-tabs .chapter-button[aria-pressed=true]{background:#6955b0;color:white}
-.chapter-note{background:#f0edff;border:0;color:#34304e;box-shadow:12px 12px 0 #6955b01f}
+#our-story.section{width:100%;max-width:none;padding-inline:max(5vw,calc((100vw - 1120px)/2));color:#26372d;background:#e5eadb;position:relative;overflow:hidden}
+#our-story .section-heading h2{color:#26372d}#our-story .section-heading h2 em{color:#55745a}#our-story .eyebrow{color:#55745a}#our-story .section-description{color:#536052}
+.constellation{margin-block:52px 26px;padding:30px 18px;border-block:1px solid #53605247}
+.constellation .celestial-button{color:#26372d}
+.constellation .celestial-button[aria-pressed=true]{background:#f7f2e7cc;box-shadow:0 12px 34px #344b351a;border-radius:18px}
+.star-node{background:#55745a;color:white}
+.timeline-note{max-width:760px;margin:24px auto 44px;padding:24px 28px;border-left:3px solid #55745a;background:#f7f2e7bd;color:#354338;border-radius:0 18px 18px 0}
+.chapter-tabs .chapter-button{border-radius:4px;border:1px solid #5360524d;color:#536052}
+.chapter-tabs .chapter-button[aria-pressed=true]{background:#55745a;color:white}
+.chapter-note{background:#f7f2e7;border:0;color:#354338;box-shadow:12px 12px 0 #55745a1f}
 /* Cream paper scrapbook */
-.scrapbook-section{background:#f7f0e5;color:#28263a;overflow:hidden}
-.scrapbook-section .section-heading h2{color:#28263a}.scrapbook-section .section-heading h2 em{color:#c15f4b}
-.scrapbook-section .eyebrow{color:#b75d4b}.scrapbook-section .section-description{color:#716878}
+.scrapbook-section{background:#f7f2e7;color:#26372d;overflow:hidden}
+.scrapbook-section .section-heading h2{color:#26372d}.scrapbook-section .section-heading h2 em{color:#bd5d3b}
+.scrapbook-section .eyebrow{color:#b75d4b}.scrapbook-section .section-description{color:#657064}
 .scrapbook-layout{gap:clamp(22px,5vw,72px);align-items:stretch}
-.scrapbook-tabs .scrap-tab{border:1px solid #e1d6c8;background:#fffaf2;color:#5b5263;border-radius:4px 18px 4px 18px}
-.scrapbook-tabs .scrap-tab[aria-selected=true]{background:#d75e4b;border-color:#d75e4b;color:white;transform:translateX(6px)}
-.scrap-paper{min-height:390px;border:1px solid #dfd1c0;border-radius:3px;color:#332d40;background:repeating-linear-gradient(0deg,#fffaf2 0,#fffaf2 31px,#eee4d7 32px);box-shadow:12px 14px 0 #e7d9c9,20px 23px 55px #332d4014}
-.paper-topline{color:#a56d62;border-bottom:1px solid #e6d8c8}.paper-content h3{color:#30283b;font-family:var(--font-display);font-size:clamp(2rem,4vw,3.5rem)}.paper-content p{color:#635665}.paper-scribble{color:#c15f4b}.scrap-footer{color:#8a6d70}
+.scrapbook-tabs .scrap-tab{border:1px solid #dedfd2;background:#fffdf7;color:#536052;border-radius:4px 18px 4px 18px}
+.scrapbook-tabs .scrap-tab[aria-selected=true]{background:#bd5d3b;border-color:#bd5d3b;color:white;transform:translateX(6px)}
+.scrap-paper{min-height:390px;border:1px solid #dedfd2;border-radius:3px;color:#26372d;background:repeating-linear-gradient(0deg,#fffdf7 0,#fffdf7 31px,#e6e9dc 32px);box-shadow:12px 14px 0 #dedfd2,20px 23px 55px #26372d14}
+.paper-topline{color:#8b654e;border-bottom:1px solid #e6d8c8}.paper-content h3{color:#26372d;font-family:var(--font-display);font-size:clamp(2rem,4vw,3.5rem)}.paper-content p{color:#536052}.paper-scribble{color:#bd5d3b}.scrap-footer{color:#657064}
 /* Mint interactive moment cards */
-.moments-section{width:100%;max-width:none;padding-inline:max(5vw,calc((100vw - 1120px)/2));color:#163d37;background:#bde9d9}
-.moments-section .section-heading h2{color:#163d37}.moments-section .section-heading h2 em{color:#247b69}.moments-section .eyebrow{color:#247b69}
-.moments-section .moment-button{border:1px solid #163d3742;background:#ffffff61;color:#174b41}
-.moments-section .moment-button[aria-pressed=true]{background:#174b41;color:#f7f0e5;box-shadow:0 12px 28px #174b4129}
-.moment-message{margin-top:30px;min-height:140px;padding:clamp(24px,4vw,48px);background:#e9fff5;border-radius:3px 40px 3px 40px;border:1px solid #163d371f;color:#214e46}
-.moment-message h3{font-family:var(--font-display);font-size:clamp(1.7rem,3vw,2.5rem);color:#163d37}
+.moments-section{width:100%;max-width:none;padding-inline:max(5vw,calc((100vw - 1120px)/2));color:#26372d;background:#d9e4cf}
+.moments-section .section-heading h2{color:#26372d}.moments-section .section-heading h2 em{color:#55745a}.moments-section .eyebrow{color:#55745a}
+.moments-section .moment-button{border:1px solid #26372d42;background:#f7f2e7a6;color:#344f39}
+.moments-section .moment-button[aria-pressed=true]{background:#344f39;color:#f7f2e7;box-shadow:0 12px 28px #344f3929}
+.moment-message{margin-top:30px;min-height:140px;padding:clamp(24px,4vw,48px);background:#fffdf7;border-radius:3px 40px 3px 40px;border:1px solid #26372d1f;color:#354338}
+.moment-message h3{font-family:var(--font-display);font-size:clamp(1.7rem,3vw,2.5rem);color:#26372d}
 /* Deep-ink ending with a lemon accent */
-.closing-section{color:#f7f0e5}.closing-section .section-heading h2{color:#f7f0e5}.closing-section .section-heading h2 em{color:#f2e68e}.closing-section .eyebrow{color:#f2e68e}
-.closing-letter{border:1px solid #f2e68e47;border-radius:4px 48px 4px 48px;background:linear-gradient(130deg,#f2e68e17,#c6b5ff0f);box-shadow:0 28px 80px #0003}
-.letter-star{color:#f2e68e}.letter-next{border-color:#f2e68e59;color:#f2e68e}.promise-button{background:#f2e68e!important;color:#26243b!important}.promise-caption{color:#f7f0e5ad}
-.site-footer{color:#f7f0e585;border-top:1px solid #f7f0e51f}.footer-love{color:#f2e68e}
+.closing-section{color:#f7f2e7}.closing-section .section-heading h2{color:#f7f2e7}.closing-section .section-heading h2 em{color:#e5b76a}.closing-section .eyebrow{color:#e5b76a}
+.closing-letter{border:1px solid #e5b76a47;border-radius:4px 48px 4px 48px;background:linear-gradient(130deg,#e5b76a17,#d9e4cf0f);box-shadow:0 28px 80px #0003}
+.letter-star{color:#e5b76a}.letter-next{border-color:#e5b76a59;color:#e5b76a}.promise-button{background:#e5b76a!important;color:#26372d!important}.promise-caption{color:#f7f2e7ad}
+.site-footer{color:#f7f2e785;border-top:1px solid #f7f2e71f}.footer-love{color:#e5b76a}
 @media(max-width:760px){.particle-opening{margin-inline:16px;border-radius:8px 8px 42px 8px}.bubu-note{grid-template-columns:1fr;padding-inline:24px;gap:28px}.bubu-stickers{min-height:245px}#our-story.section,.moments-section{padding-inline:24px}.scrapbook-section .page-width{width:calc(100% - 40px)}.scrap-paper{min-height:330px}}
 @media(prefers-reduced-motion:reduce){.keepsake *,.keepsake *:before,.keepsake *:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
