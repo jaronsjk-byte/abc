@@ -287,3 +287,8 @@
   .open-letter-button::after { animation: none !important; }
   .open-letter-button, .scrap-paper, .scrap-tab, .moment-button, .chapter-button, .closing-letter, .site-header .brand { transition: none !important; }
 }
+
+
+/* Animated Canvas2D Herbarium raster background */
+.herbarium-canvas.night-image { display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: .88; pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .herbarium-canvas { animation: none !important; } }
