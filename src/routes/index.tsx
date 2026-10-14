@@ -44,6 +44,16 @@ const moodSlides = [
 
 function Index() {
   const [opened, setOpened] = useState(false);
+  const [musicPlaying, setMusicPlaying] = useState(false);
+  const musicRef = useRef<HTMLAudioElement>(null);
+  async function toggleMusic() {
+    const audio = musicRef.current;
+    if (!audio) return;
+    if (audio.paused) {
+      try { await audio.play(); setMusicPlaying(true); }
+      catch { setMusicPlaying(false); }
+    } else { audio.pause(); setMusicPlaying(false); }
+  }
   const [milestone, setMilestone] = useState(0);
   const [chapter, setChapter] = useState(0);
   const [scrap, setScrap] = useState(0);
@@ -64,7 +74,7 @@ function Index() {
     <header className="site-header page-width">
       <a href="#top" className="brand" aria-label="Dear's Mood Garden, back to the beginning"><LittleStar/>Our little universe</a>
       <span className="header-dedication">A little world with many moods</span>
-      <span className="song-note"><Music2 aria-hidden="true"/>Made for your kind of chaos</span>
+      <div className="song-note"><audio ref={musicRef} src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" loop preload="none" onPlay={() => setMusicPlaying(true)} onPause={() => setMusicPlaying(false)} /><button type="button" className="music-toggle" onClick={toggleMusic} aria-label={musicPlaying ? "Pause background music" : "Play background music"}><Music2 aria-hidden="true"/><span>{musicPlaying ? "Pause song" : "Play song"}</span></button><span className={musicPlaying ? "music-playing" : ""} aria-hidden="true">{musicPlaying ? "♫ ♪ ♫" : "Made for your kind of chaos"}</span></div>
     </header>
     <main>
       <section className="particle-opening page-width" aria-label="Animated mood garden opening"><ParticleDissolveCarousel items={moodSlides as ParticleDissolveItem[]} height="min(88svh, 900px)" particles={80000} autoplay={6500} pattern="sweep" glow={0.8} dust={0.18} backdrop="#171329" /></section>
