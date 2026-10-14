@@ -266,3 +266,24 @@
 
 /* Night-sky fallback: keeps the hero self-contained when the original binary asset is unavailable in a source-only transfer. */
 .intro .night-image { background: radial-gradient(ellipse at 50% 24%, rgba(139, 111, 171, .26), transparent 38%), radial-gradient(circle at 18% 28%, rgba(255,255,255,.62) 0 1px, transparent 1.7px), radial-gradient(circle at 76% 17%, rgba(255,255,255,.5) 0 1px, transparent 1.8px), radial-gradient(circle at 68% 49%, rgba(255,255,255,.38) 0 1px, transparent 1.7px), linear-gradient(180deg, #17121f 0%, #201827 48%, #17121d 100%); background-size: auto, 113px 97px, 151px 127px, 173px 139px, auto; }
+
+
+/* 21st.dev-inspired polish: restrained shimmer, ambient borders, and purposeful hover feedback. */
+.open-letter-button { position: relative; isolation: isolate; overflow: hidden; box-shadow: 0 8px 30px rgba(207, 139, 171, .12); transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease; }
+.open-letter-button::after { content: ""; position: absolute; inset: -120% -40%; z-index: -1; pointer-events: none; background: linear-gradient(110deg, transparent 42%, rgba(255,255,255,.22) 49%, rgba(255,255,255,.42) 51%, transparent 58%); transform: translateX(-65%) rotate(8deg); animation: keepsake-shimmer 6.5s ease-in-out infinite; }
+.open-letter-button:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(207, 139, 171, .2); }
+.scrap-paper { transition: transform .35s ease, box-shadow .35s ease; }
+.scrap-paper:hover { transform: rotate(-.5deg) translateY(-3px); box-shadow: 0 26px 75px rgba(0,0,0,.28), 0 0 0 1px rgba(232,190,205,.18); }
+.scrap-tab, .moment-button, .chapter-button { transition: transform .22s ease, border-color .22s ease, background-color .22s ease, box-shadow .22s ease; }
+.scrap-tab:hover, .moment-button:hover, .chapter-button:hover { transform: translateY(-2px); box-shadow: 0 7px 24px rgba(0,0,0,.15); }
+.scrap-tab[aria-selected="true"], .moment-button[aria-pressed="true"] { box-shadow: 0 0 0 1px rgba(231,178,198,.15), 0 8px 24px rgba(231,178,198,.08); }
+.closing-letter { transition: box-shadow .3s ease, transform .3s ease; }
+.closing-letter:hover { box-shadow: var(--shadow-paper), 0 0 0 1px rgba(231,178,198,.14); }
+.site-header .brand { transition: opacity .2s ease, transform .2s ease; }
+.site-header .brand:hover { opacity: .88; transform: translateY(-1px); }
+@keyframes keepsake-shimmer { 0%, 68%, 100% { transform: translateX(-65%) rotate(8deg); } 82% { transform: translateX(65%) rotate(8deg); } }
+:focus-visible { outline: 2px solid var(--primary); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+  .open-letter-button::after { animation: none !important; }
+  .open-letter-button, .scrap-paper, .scrap-tab, .moment-button, .chapter-button, .closing-letter, .site-header .brand { transition: none !important; }
+}
